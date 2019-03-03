@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Projects{% endblock %}
+</style>
+{% block header %} 
+<h1> Projects </h1>
+{% endblock %}
+
+{% block content %}
+I have a small collection of other scripts hosted on my github <a href="https://github.com/WorleyD">here</a>. These are mostly solutions to Kattis programs, and as such are undocumented. Clicking a project name will bring you to the github repo for that project, whenever available.  
+
+<h2><a href="https://github.com/WorleyD/worley.dev">This Site</a></h2>
+As mentioned on the homepage, this site was a quick personal project to get familiar with Flask and basic web deployment. I learned a fair bit of CSS doing this as well and will be keeping the site updated as my experience increases. 
+
+<h2><a href="https://github.com/WorleyD/cs311-project">CourseFinder</a></h2>
+This project was the final project for my Introduction to Software Engineering class. I, and 3 other students, created a course information and directory site. This site was created using Django, and had capabilities for rating courses, reviewing courses, rating professors, and saving courses to a user's personal profile. This project had a large focus on database design, as that was a key criteria in getting all the course information presentable. It was created over the course of about 2 weeks, and my contributions were largely to the views and user functionality.
+
+<h2> <a href="https://github.com/WorleyD/-u-brainfuckcompilebot">BF Compiling Reddit Bot</a></h2>
+A reddit bot that compiles BF code in the comment where it was called, the reddit bot is unhosted, and the PRAW API it uses is likely long outdated. This project was written in Python as a fun experiment to play with an API. Some testing results of the bot running can be seen on Reddit <a href="https://www.reddit.com/r/BrainFuckCompileBot/comments/78j1nj/new_test/">here</a> and <a href="https://www.reddit.com/r/BrainFuckCompileBot/comments/78ipcg/test/">here</a>.
+
+<h3 style="color:#227a33"> Upcoming Projects </h3>
+-Centralized Botnet written in Python
+{% endblock %}

@@ -29,3 +29,6 @@ def about():
 def contact():
 	return render_template('contact.html')
 
+if __name__ == '__main__':
+    worley.debug = True
+    worley.run(host = '0.0.0.0',port=5005)

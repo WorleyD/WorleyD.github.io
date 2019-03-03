@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+	<head> 
+		<style>
+			head {
+				background-color: #3a3c3d;
+				color:#e8e8e8;
+			}
+			
+			body {
+				background-color: #3a3c3d;
+				color:#e8e8e8;	
+			}
+			footer {
+				text-align: center;
+				background-color: #3a3c3d;
+				color:#1c1d1e;
+			}
+
+			header {
+				text-align: center;
+				color:#227a33;
+				font-size: 24px;
+			}
+
+			h2 {
+				color:#227a33;
+			}
+
+			h3 {
+				color:#227a33;
+			}
+
+			.topnav {
+				background-color: #292b2d;
+				overflow: hidden; 
+				margin-left: auto;
+				margin-right: auto;
+				width: 50%;
+				align-content: center;
+			}
+
+			.topnav-right {
+				float:right;
+			}
+
+			.topnav a {
+				float: left;
+				color: #e8e8e8;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+				font-size: 17px;
+			}
+			.topnav a:hover {
+				background-color: #227a33;
+				color: #292b2d;
+			}
+			a {
+				color: #227a33;
+			}
+			.content {
+				margin-left: auto;
+				margin-right: auto;
+				font-size: 20px;
+				width: 50%;
+				text-align: center;
+			}
+
+			.content a:visited {
+				color:#227a33;
+			}
+
+			.content a:unvisited {
+				color:#227a33;
+			}
+
+			#topBtn {
+				display: none;
+				position:fixed;
+				bottom:20px;
+				right:30px;
+				z-index: 99;
+				border: none;
+				outline: none;
+				background-color: #1c1d1e;
+				color:#e8e8e8;
+				cursor:pointer;
+				padding: 15px;
+				border-radius: 10px;
+				font-size: 20px;
+			}
+
+			#topBtn:hover {
+				background-color: #227a33;
+				color:#1c1d1e;
+			}
+
+			.socials a {
+				font-size: 30px;	
+				padding: 1px;
+				color:#1c1d1e;
+			}
+			
+			.socials a:visited {
+				color:#1c1d1e;	
+			}
+
+			.fab:hover {
+				color: #227a33;
+			}			
+
+		</style>
+		<title>About Me</title>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	</head>
+	<body>
+		
+		<div class="topnav">
+			<a href="/"> Home </a> 
+			<a href="/about"> About </a>
+			<a href="/projects"> Projects </a> 
+			<a href="/events"> Events </a> 
+			<a href="/experience"> Experience </a> 
+
+			<div class="topnav-right">
+				<a href="/contact"> Contact </a> 
+			</div>
+		</div> 
+		
+		<header>
+			 
+<h1> About Me </h1>
+
+		</header>
+		
+		<div class="content">
+		
+I'm a 3rd year student attending the University of Windsor, where I am in the process of obtaining 2 honours bachelor's degrees, one in Computer Science, and the other in Mathematics. I'm an involved student, and am currently an Undergraduate Representative for the School of Computer Science, where I work closely with faculty on issues relevant to the school and its students. I also sit as a 3rd year representative in the student run Computer Science Society which hosts events for Computer Science Students. 
+<br>
+Another thing I enjoy is competitions and Hackathons, which you can read more about on my <a href="/events">Events</a> page. 
+<br>
+
+		</div>
+
+		<button onclick="clickFunction()" id="topBtn" title="Go to top">Back to Top</button>
+		<br>
+		<footer>
+			<div class="socials">
+				<a href="https://twitter.com/WorleyD_"><i class="fab fa-twitter"></i></a>
+  				<a href="https://www.linkedin.com/in/david-worley/"><i class="fab fa-linkedin-in"></i></a>
+  				<a href="https://github.com/WorleyD"><i class="fab fa-github"></i></a>
+  			</div>
+			&copy; Copyright 2019 - David Worley
+		</footer>
+
+	<script>
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("topBtn").style.display = "block";
+		}
+		else {
+			document.getElementById("topBtn").style.display = "none";
+		}
+	}
+
+	function clickFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}	
+	</script>
+
+	</body>
+</html>

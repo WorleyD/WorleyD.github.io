@@ -3,40 +3,51 @@
 	<head> 
 		<style>
 			head {
-				background-color: #3a3c3d;
-				color:#e8e8e8;
+				background-color: #041530;
+				color:#b5b8c4;
 			}
 			
 			body {
-				background-color: #3a3c3d;
-				color:#e8e8e8;	
+				background-color: #041530;
+				color:#b5b8c4;	
 			}
 			footer {
 				text-align: center;
-				background-color: #3a3c3d;
-				color:#1c1d1e;
+				background-color: #041530;
+				color:#b5b8c4;
 			}
 
 			header {
 				text-align: center;
-				color:#227a33;
+				color:#818ab5;
 				font-size: 24px;
 			}
 
 			h2 {
-				color:#227a33;
+				color:#818ab5;
 			}
 
 			h3 {
-				color:#227a33;
+				color:#818ab5;
+			}
+
+			.title {
+				background-color: #041530;
+				align-content: center;
+				text-align: center;
+				font-size: 30px;
+				color: #818ab5;
+			}
+			.title a {
+				text-decoration: none;
 			}
 
 			.topnav {
-				background-color: #292b2d;
+				background-color: #041530;
 				overflow: hidden; 
 				margin-left: auto;
 				margin-right: auto;
-				width: 70%;
+				width: 90%;
 				align-content: center;
 			}
 
@@ -46,18 +57,18 @@
 
 			.topnav a {
 				float: left;
-				color: #e8e8e8;
+				color: #b5b8c4;
 				text-align: center;
 				padding: 14px 16px;
 				text-decoration: none;
-				font-size: 17px;
-			}
-			.topnav a:hover {
-				background-color: #227a33;
-				color: #292b2d;
+				font-size: 20px;
 			}
 			a {
-				color: #227a33;
+				color: #7882ad;
+				text-decoration: none;
+			}
+			.topnav a:visited {
+				color:#7882ad;
 			}
 			.content {
 				margin-left: auto;
@@ -67,12 +78,11 @@
 				text-align: center;
 			}
 
-			.content a:visited {
-				color:#227a33;
-			}
-
 			.content a:unvisited {
-				color:#227a33;
+				color:#7882ad;
+			}
+			.content a:visited {
+				color:#818ab5;
 			}
 
 			#topBtn {
@@ -83,31 +93,22 @@
 				z-index: 99;
 				border: none;
 				outline: none;
-				background-color: #1c1d1e;
-				color:#e8e8e8;
+				background-color: #041530;
+				color:#818ab5;
 				cursor:pointer;
 				padding: 15px;
 				border-radius: 10px;
 				font-size: 20px;
 			}
 
-			#topBtn:hover {
-				background-color: #227a33;
-				color:#1c1d1e;
-			}
-
 			.socials a {
-				font-size: 40px;	
-				padding: 2px;
-				color:#1c1d1e;
-			}
-			
-			.socials a:visited {
-				color:#1c1d1e;	
+				font-size: 35px;	
+				padding: 1px;
+				color:#818ab5;
 			}
 
 			.fab:hover {
-				color: #227a33;
+				color: #b5b8c4;
 			}			
 
 		</style>
@@ -115,31 +116,39 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	</head>
 	<body>
-		
+		<div class="title">
+		<a href="/">Worley.dev</a>
+		</div>
 		<div class="topnav">
-			<a href="/"> Home </a> 
+			<a href="/blog"> Blog </a> 
 			<a href="/about"> About </a>
 			<a href="/projects"> Projects </a> 
 			<a href="/events"> Events </a> 
 			<a href="/experience"> Experience </a> 
-
 			<div class="topnav-right">
 				<a href="/contact"> Contact </a> 
 			</div>
 		</div> 
 		
 		<header>
-			 
+			<u>   
 <h1> Projects </h1>
-
+  </u>
 		</header>
 		
 		<div class="content">
 		
-I have a small collection of other scripts hosted on my github <a href="https://github.com/WorleyD">here</a>. These are mostly solutions to Kattis programs, and as such are undocumented. Clicking a project name will bring you to the github repo for that project, whenever available.  
+Clicking a project name will bring you to the github repo for that project, whenever available.  
+
+
+<h2> <a href="https://github.com/WorleyD/Conway">Conway's Game of Life</a></h2>
+A simple cellular automata following Conway's well-known rules. This project was meant as an introduction to simulation programs. The program was written using only the <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">wikipedia page</a> for Conway's Game of Life for reference, this was done purely as a fun personal challenge. It also incorporates the PySimpleGUI library to make a small display window for the simulation.
+
+<h2> HTTP-Based Botnet </h2>
+A python botnet written by another student and I for my Network Security class. This botnet allows the setup of multiple C&C centers through the use of database authentication. Once authenticated, the C&C server can download and upload files, as well as execute code on remote machines. This was a purely educational project, and the code is currently private.  
 
 <h2><a href="https://github.com/WorleyD/worley.dev">This Site</a></h2>
-As mentioned on the homepage, this site was a quick personal project to get familiar with Flask and basic web deployment. I learned a fair bit of CSS doing this as well and will be keeping the site updated as my experience increases. 
+As mentioned on the homepage, this site was a quick personal project to get familiar with Flask and basic web deployment. I learned a bit about web devlopment doing this as well and will be keeping the site updated as my experience increases. 
 
 <h2><a href="https://github.com/WorleyD/cs311-project">CourseFinder</a></h2>
 This project was the final project for my Introduction to Software Engineering class. I, and 3 other students, created a course information and directory site. This site was created using Django, and had capabilities for rating courses, reviewing courses, rating professors, and saving courses to a user's personal profile. This project had a large focus on database design, as that was a key criteria in getting all the course information presentable. It was created over the course of about 2 weeks, and my contributions were largely to the views and user functionality.
@@ -147,8 +156,9 @@ This project was the final project for my Introduction to Software Engineering c
 <h2> <a href="https://github.com/WorleyD/-u-brainfuckcompilebot">BF Compiling Reddit Bot</a></h2>
 A reddit bot that compiles BF code in the comment where it was called, the reddit bot is unhosted, and the PRAW API it uses is likely long outdated. This project was written in Python as a fun experiment to play with an API. Some testing results of the bot running can be seen on Reddit <a href="https://www.reddit.com/r/BrainFuckCompileBot/comments/78j1nj/new_test/">here</a> and <a href="https://www.reddit.com/r/BrainFuckCompileBot/comments/78ipcg/test/">here</a>.
 
-<h3 style="color:#227a33"> Upcoming Projects </h3>
--Centralized Botnet written in Python (School Project!)
+<br><br><br>
+I have a small collection of other scripts hosted on my <a href="https://github.com/WorleyD">github</a>. These are mostly solutions to Kattis problems, and as such are undocumented. 
+
 
 		</div>
 
@@ -160,6 +170,7 @@ A reddit bot that compiles BF code in the comment where it was called, the reddi
   				<a href="https://www.linkedin.com/in/david-worley/"><i class="fab fa-linkedin-in"></i></a>
   				<a href="https://github.com/WorleyD"><i class="fab fa-github"></i></a>
   			</div>
+  			<br>
 			&copy; Copyright 2019 - David Worley
 		</footer>
 

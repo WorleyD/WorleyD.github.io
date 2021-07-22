@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+	<head> 
+		<style>
+			html {
+				overflow-y: scroll;
+			}
+			
+			head {
+				background-color: #f2f2f2;
+				color:#292b2d;
+			}
+			
+			body {
+				background-color: #f2f2f2;
+				color:#292b2d;	
+				margin-bottom: 100px;
+			}
+			footer {
+				overflow:hidden;
+				padding-top: 10px;
+				text-align: center;
+				background-color: #292b2d;
+				color:#f2f2f2;
+				position: fixed;
+				bottom: 0;
+				align-content: center;
+				width: 100%;
+			}
+
+			header {
+				text-align: center;
+				color:#f2f2f2;
+				font-size: 24px;
+			}
+			h1 {
+				color: #292b2d;
+			}
+			h2 {
+				color:#292b2d;
+			}
+
+			h3 {
+				color:#292b2d;
+			}
+
+			.topnav {
+				background-color: #292b2d;
+				overflow: hidden; 
+				margin-left: auto;
+				margin-right: auto;
+				width: 90%;
+				align-content: center;
+			}
+
+			.topnav-right {
+				float:right;
+			}
+
+			.topnav a {
+				float: left;
+				color: #f2f2f2;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+				font-size: 20px;
+			}
+			.topnav a:hover {
+				background-color: #f2f2f2;
+				color: #292b2d;
+			}
+			a {
+				color: #292b2d;
+			}
+			.content {
+				margin-left: auto;
+				margin-right: auto;
+				font-size: 20px;
+				width: 50%;
+				text-align: center;
+			}
+
+			.content a:visited {
+				color:#a3a3a3;
+			}
+
+			.content a:unvisited {
+				color:#227a33;
+			}
+
+			#topBtn {
+				display: none;
+				position:fixed;
+				bottom:20px;
+				right:30px;
+				z-index: 99;
+				border: none;
+				outline: none;
+				background-color: #1c1d1e;
+				color:#e8e8e8;
+				cursor:pointer;
+				padding: 15px;
+				border-radius: 10px;
+				font-size: 20px;
+			}
+
+			.socials a {
+				font-size: 40px;	
+				padding: 5px;
+				color:#1c1d1e;
+			}
+			
+			.socials a:visited {
+				color:#1c1d1e;	
+			}
+
+			.fab:hover {
+				color: #f2f2f2;
+			}			
+
+		</style>
+		<title>Experience</title>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	</head>
+	<body>
+		
+		<div class="topnav">
+			<a href="/"> Home </a> 
+			<a href="/about"> About </a>
+			<a href="/projects"> Projects </a> 
+			<a href="/events"> Events </a> 
+			<a href="/experience"> Experience </a> 
+			<a href="/research"> Research </a>
+			<div class="topnav-right">
+				<a href="/contact"> Contact </a> 
+			</div>
+		</div> 
+		
+		<header>
+			 
+<h1> Experience </h1>
+
+		</header>
+		
+		<div class="content">
+		
+<h2> Software Developer - Genasys Communications Canada </h2>
+<p> July 2019 - Present </p>
+- Plan and develop an API update for a multi-company project <br>
+- Develop, test, and maintain Java code for a critical company product <br/>
+- Demo a product for interested clients <br>
+<br>
+<h2> Research Assistant - University of Windsor </h2>
+<p> Sept. 2018 - Apr. 2020 </p><br>
+- Work with a close team to research congestion control in vehicle networks <br>
+- Develop traffic models in XML for simulation with SUMO <br>
+- Link these traffic models with Veins and Omnet++ to accurately track and simulate network congestion <br>
+<br>
+<h2> Teaching Assistant - University of Windsor </h2>
+<p>Sept. 2017 - Dec. 2020 </p> 
+- Assist professors with the marking of assignments, and proctoring of tests <br>
+- Assist in running lab to assist students with course assignments <br>
+- Hold office hours to help students in a one on one environment <br>
+<br>
+<h2> Vice Chair of Finance and Research - CUCSC Organizational Committee</h2>
+<p> Nov. 2018 - Aug. 2019 </p>
+- Handle all financial matters, including budgeting, ledger tracking, and transfering of funds for the Canadian Undergraduate Computer Science Conference.<br>
+- Handle all research related matters, including creating, launching, and overseeing the Call for Papers <br>
+- Work closely with conference Chair and other Vice Chairs to coordinate the event and provide a good experience to attendees<br>
+<br>
+<h2> Undergraduate Representative - University of Windsor </h2>
+<p> Sept. 2018 - Sept. 2019</p>
+- Work directly with faculty to discuss and vote on issues relevant to the school and its students <br>
+- Bring forward undergraduate student issues and concerns to be dealt with <br>
+<br>
+
+
+		</div>
+
+		<button onclick="clickFunction()" id="topBtn" title="Go to top">^</button>
+		<br>
+		<footer>
+			<div class="socials">
+				<a href="https://twitter.com/WorleyD_"><i class="fab fa-twitter"></i></a>
+  				<a href="https://www.linkedin.com/in/david-worley/"><i class="fab fa-linkedin-in"></i></a>
+  				<a href="https://github.com/WorleyD"><i class="fab fa-github"></i></a>
+  			</div>
+			&copy; Copyright 2021 - David Worley
+		</footer>
+
+	<script>
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("topBtn").style.display = "block";
+		}
+		else {
+			document.getElementById("topBtn").style.display = "none";
+		}
+	}
+
+	function clickFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}	
+	</script>
+
+	</body>
+</html>

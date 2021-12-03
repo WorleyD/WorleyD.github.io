@@ -37,7 +37,7 @@
 
 
 <hr noshade="noshade">
-<b><font color="#005128">Project Outline:</font></b> The first stage of my project is to present a literature review and comparison of current state-of-the-art methodologies for distributed graph colouring. The second stage will be to implement one such algorithm, recently designed by Maus. This is a round based algorithm where each of the p processors will process n/p vertices and generate a sequence for them. This sequence is calculated by sampling distinct polynomials from a prime field to guarantee minimal conflicts between any two polynomials. With this, vertices can test the colors in their sequence for conflicts with their neighbour and permanently color themselves once they have found a more suitable color. This algorithm scaled between generating a \delta + 1 coloring and a O(\delta^2) coloring, subsuming many prevalent distributed graph coloring algorithms through clever choice of algorithms. Experimental coloring results will be discussed and the algorithm will be highlighted in comparison to other common distributed graph coloring algorithms.
+<b><font color="#005128">Project Outline:</font></b> The first stage of my project is to present a literature review and comparison of current state-of-the-art methodologies for distributed graph colouring. The second stage will be to implement one such algorithm, recently designed by Maus. This is a round based algorithm where each of the p processors will process n/p vertices and generate a sequence for them. This sequence is calculated by sampling distinct polynomials from a prime field to guarantee minimal conflicts between any two polynomials. With this, vertices can test the colors in their sequence for conflicts with their neighbour and permanently color themselves once they have found a more suitable color. This algorithm scales between generating a \delta + 1 coloring and a O(\delta^2) coloring, subsuming many prevalent distributed graph coloring algorithms through clever choice of parameters. Experimental coloring results will be discussed for graphs of increasing size.
 <p><b><font color="#005128">Startup Paper(s):</font></b> Maus, Y. (2021). <a href="https://raw.githubusercontent.com/WorleyD/WorleyD.github.io/main/COMP5704/papers/graphcolouring.pdf"> Distributed Graph Colouring Made Easy</a>. Proceedings of the 33rd ACM Symposium on Parallelism in Algorithms and Architectures. https://doi.org/10.1145/3409964.3461804 </p>
 
 <p><b><font color="#005128">Deliverables:</font></b></p>
@@ -60,15 +60,13 @@ Question Sheet </div>
     <div align="left"><a href="Final_Paper.pdf"><font color="#000000">Final
 Paper</font></a> (PDF file created from LATEX template)</div>
   </li>
-  <li><a href="Code_and_Data"><font color="#000000">Code and Data</font></a>
+  <li><a href="https://github.com/WorleyD/DistributedGraphColoring"><font color="#000000">Code and Data</font></a>
 (put all code, data, etc. into this directory)</li>
 </ul>
 
 <p><b><font color="#005128">Relevant References:</font></b></p>
 
 <ul>
-
-  <li>list all relevant papers and include links to their PDF files</li>
 
   <li>L. Barenboim, M. Elkin, and U. Goldenberg. <a href="https://raw.githubusercontent.com/WorleyD/WorleyD.github.io/main/COMP5704/papers/breakingsvbarrier.pdf">Locally-iterative distributed (δ + 1)-
 colouring below szegedy-vishwanathan barrier, and applications to self-stabilization and
